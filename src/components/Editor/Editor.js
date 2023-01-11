@@ -30,6 +30,10 @@ export default function Editor({
     setAlignment(event.target.value);
   };
 
+  const textHandler = (event) => {
+    setText(event.target.value);
+  };
+
   return (
     <div className="editor">
       <div className="form-control">
@@ -71,7 +75,7 @@ export default function Editor({
         </div>
       </div>
       <div className="form-control">
-        <textarea style={{ height: '250px' }} />
+        <textarea value={text} onChange={textHandler} style={{ height: '250px' }} />
         <label>Text</label>
       </div>
     </div>
