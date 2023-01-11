@@ -61,7 +61,7 @@ export default function Editor({
         <label>Alignment</label>
         <div className="radio-group" onChange={alignmentHandler}>
           <label>
-            <input name="align" type="radio" value="left" />
+            <input name="align" type="radio" value="left" defaultChecked />
             <i className="ri-align-left"></i>
           </label>
           <label>
